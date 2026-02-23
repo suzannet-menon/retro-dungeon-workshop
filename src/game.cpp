@@ -354,6 +354,7 @@ void Game::renderUI() {
     std::cout << "  Level: " << m_player->level;
     std::cout << "  Gold: " << m_player->gold;
     std::cout << "  Dungeon: " << m_player->dungeonLevel;
+    std::cout << "  Inventory: " << m_player->inventory.size() << "/20";
 }
 
 void Game::renderMessages() {
