@@ -94,10 +94,6 @@ cmake --build build
 .\build\bin\retro_dungeon.exe
 ```
 
-**You actually just used PowerShell today to set up your React app** — so you can vouch this works on Windows! That's relevant experience 😄
-
-Go add this to the README in your forked repo, commit with message `add Windows installation instructions to README` and PR it!
-
 ### Installing Dependencies
 
 Catch2 is automatically fetched via CMake FetchContent during the build process. No manual installation required.
