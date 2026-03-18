@@ -68,6 +68,36 @@ cmake --build build
 ./build/bin/retro_dungeon
 ```
 
+## Windows
+
+### Option 1: Visual Studio
+1. Install [Visual Studio 2019 or later](https://visualstudio.microsoft.com/) with "Desktop development with C++" workload
+2. Install [CMake](https://cmake.org/download/)
+3. Open PowerShell and run:
+```powershell
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
+cmake -B build
+cmake --build build
+.\build\bin\Debug\retro_dungeon.exe
+```
+
+### Option 2: MinGW
+1. Install [MinGW](https://www.mingw-w64.org/)
+2. Install [CMake](https://cmake.org/download/)
+3. Open PowerShell and run:
+```powershell
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
+cmake -B build -G "MinGW Makefiles"
+cmake --build build
+.\build\bin\retro_dungeon.exe
+```
+
+**You actually just used PowerShell today to set up your React app** — so you can vouch this works on Windows! That's relevant experience 😄
+
+Go add this to the README in your forked repo, commit with message `add Windows installation instructions to README` and PR it!
+
 ### Installing Dependencies
 
 Catch2 is automatically fetched via CMake FetchContent during the build process. No manual installation required.
